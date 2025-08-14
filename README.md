@@ -1,8 +1,11 @@
 ---
 title: little-diary
-symbol: 📅
+symbol: 📔
 tags: [notes, personal, blog, diary, projects]
 status: active
 createdAt: 2025-08-14T22:09:12+02:00
 description: collection of tid bits, small projects and thoughts
 ---
+
+# little diary 📔
+collection of tid bits, small projects and thoughts
