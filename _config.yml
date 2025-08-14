@@ -2,3 +2,5 @@ title: Little Diary
 description: collection of tid bits, small projects and thoughts
 theme: null
 markdown: kramdown
+url: "https://gurki.github.io"
+baseurl: "/little-diary"
