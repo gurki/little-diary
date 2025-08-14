@@ -2,5 +2,11 @@ title: Little Diary
 description: collection of tid bits, small projects and thoughts
 theme: null
 markdown: kramdown
+highlighter: rouge
 url: "https://gurki.github.io"
 baseurl: "/little-diary"
+
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true

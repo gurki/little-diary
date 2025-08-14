@@ -1,16 +1,14 @@
 /* Load local fonts */
 @font-face {
   font-family: 'PixelOperator';
-  src: url('{{ "/assets/fonts/PixelOperator8.ttf" | relative_url }}')
-    format('truetype');
+  src: url('{{ site.baseurl }}/assets/fonts/PixelOperator8.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'BattleNet';
-  src: url('{{ "/assets/fonts/battlenet.ttf" | relative_url }}')
-    format('truetype');
+  src: url('{{ site.baseurl }}/assets/fonts/battlenet.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -93,3 +91,36 @@ img {
   image-rendering: pixelated;
   max-width: 100%;
 }
+
+/* Code block container */
+pre, code {
+  font-family: 'PixelOperator', monospace;
+  font-size: 13px;
+}
+
+pre {
+  background-color: #1a1a1a;
+  border: 2px solid #444;
+  padding: 10px;
+  overflow-x: auto;
+  border-radius: 4px;
+}
+
+/* Inline code */
+code {
+  background-color: #222;
+  padding: 2px 4px;
+  border-radius: 3px;
+  color: var(--c6); /* orange accent */
+}
+
+/* Syntax colors */
+.highlight .k { color: var(--c1); } /* keyword */
+.highlight .o { color: var(--c5); } /* operator */
+.highlight .cm { color: #888; font-style: italic; } /* comment */
+.highlight .s { color: var(--c7); } /* string */
+.highlight .na { color: var(--c3); } /* attribute name */
+.highlight .nb { color: var(--c2); } /* built-in name */
+.highlight .nf { color: var(--c8); } /* function name */
+.highlight .nt { color: var(--c4); } /* tag name */
+.highlight .mi { color: var(--c12); } /* number */
