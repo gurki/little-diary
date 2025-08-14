@@ -1,9 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* Load local fonts */
+@font-face {
+  font-family: 'PixelOperator';
+  src: url('{{ "/assets/fonts/PixelOperator8.ttf" | relative_url }}')
+    format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'BattleNet';
+  src: url('{{ "/assets/fonts/battlenet.ttf" | relative_url }}')
+    format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Color palette variables */
+:root {
+  --c1: #3dbed2;
+  --c2: #40c3ae;
+  --c3: #5ac577;
+  --c4: #a0b93b;
+  --c5: #cca737;
+  --c6: #ea9549; /* ORANGE - default accent */
+  --c7: #f28a7a;
+  --c8: #f481a8;
+  --c9: #e382dc;
+  --c10: #b996f5;
+  --c11: #8fa8f3;
+  --c12: #5db5ef;
+}
+
+/* Base styles */
 body {
   background-color: #111;
   color: #eee;
-  font-family: 'Press Start 2P', monospace;
+  font-family: 'PixelOperator', monospace;
   font-size: 14px;
   line-height: 1.6;
   max-width: 800px;
@@ -12,22 +44,37 @@ body {
 }
 
 a {
-  color: #ffcc00;
+  color: var(--c6); /* orange links */
   text-decoration: none;
 }
 
 a:hover {
+  color: var(--c7); /* salmon hover */
   text-decoration: underline;
 }
 
 header {
-  border-bottom: 4px solid #ffcc00;
+  border-bottom: 4px solid var(--c6); /* orange border */
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
 
+/* Headings use BattleNet font */
 h1, h2, h3 {
-  color: #ffcc00;
+  font-family: 'BattleNet', monospace;
+  font-weight: normal;
+}
+
+h1 {
+  color: var(--c6); /* orange main heading */
+}
+
+h2 {
+  color: var(--c1); /* cyan secondary heading */
+}
+
+h3 {
+  color: var(--c9); /* purple tertiary heading */
 }
 
 .post {
