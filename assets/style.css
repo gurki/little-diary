@@ -18,18 +18,18 @@
 
 /* Color palette variables */
 :root {
-  --c1: #3dbed2;
-  --c2: #40c3ae;
-  --c3: #5ac577;
-  --c4: #a0b93b;
-  --c5: #cca737;
-  --c6: #ea9549; /* ORANGE - default accent */
-  --c7: #f28a7a;
-  --c8: #f481a8;
-  --c9: #e382dc;
-  --c10: #b996f5;
-  --c11: #8fa8f3;
-  --c12: #5db5ef;
+  --jan-clear-ice:          #3dbed2;  /* shōkan 小寒: deep winter, frozen rivers */
+  --feb-budding-shore:      #40c3ae;  /* usui 雨水: snow melts, water flows */
+  --mar-sprouting-fields:   #5ac577;  /* keichitsu 啓蟄: first shoots emerge */
+  --apr-young-rice:         #a0b93b;  /* seimei 清明: fields turn fresh green */
+  --may-early-grain:        #cca737;  /* shōman 小満: barley ripens */
+  --jun-summer-sol:         #ea9549;  /* geshi 夏至: sun at its zenith */
+  --jul-heat-haze:          #f28a7a;  /* shōsho 小暑: warm winds, cicadas sing */
+  --aug-evening-festival:   #f481a8;  /* obon お盆: lanterns and blossoms */
+  --sep-purple-dew:         #e382dc;  /* hakuro 白露: cool mornings, autumn flowers */
+  --oct-chrysanthemum-moon: #b996f5;  /* kangetsu 観月: harvest moon nights */
+  --nov-early-frost:        #8fa8f3;  /* sōkō 霜降: frost on the fields */
+  --dec-winter-sky:         #5db5ef;  /* tōji 冬至: clear, cold solstice days */
 }
 
 /* Base styles */
@@ -45,17 +45,17 @@ body {
 }
 
 a {
-  color: var(--c6); /* orange links */
+  color: var(--jun-summer-sol); /* orange links */
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--c7); /* salmon hover */
+  color: var(--jul-heat-haze); /* salmon hover */
   text-decoration: underline;
 }
 
 header {
-  border-bottom: 4px solid var(--c6); /* orange border */
+  border-bottom: 4px solid var(--jun-summer-sol); /* orange border */
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
@@ -67,15 +67,15 @@ h1, h2, h3 {
 }
 
 h1 {
-  color: var(--c6); /* orange main heading */
+  color: var(--jun-summer-sol); /* orange main heading */
 }
 
 h2 {
-  color: var(--c1); /* cyan secondary heading */
+  color: var(--jan-clear-ice); /* cyan secondary heading */
 }
 
 h3 {
-  color: var(--c9); /* purple tertiary heading */
+  color: var(--sep-purple-dew); /* purple tertiary heading */
 }
 
 .post {
