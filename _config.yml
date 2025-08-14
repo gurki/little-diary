@@ -5,6 +5,4 @@ markdown: kramdown
 highlighter: rouge
 url: "https://gurki.github.io"
 baseurl: "/little-diary"
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+page_excerpts: true

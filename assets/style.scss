@@ -1,5 +1,5 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/base16/monokai.min.css');
-
+---
+---
 
 /* Load local fonts */
 @font-face {
@@ -10,11 +10,32 @@
 }
 
 @font-face {
-  font-family: 'BattleNet';
-  src: url('{{ site.baseurl }}/assets/fonts/battlenet.ttf') format('truetype');
+  font-family: 'SuperMarioBros';
+  src: url('{{ site.baseurl }}/assets/fonts/Super Mario Bros 2.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'DepartureMono';
+  src: url('{{ site.baseurl }}/assets/fonts/DepartureMono-Regular.woff2') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// @font-face {
+//   font-family: 'PressStart2P';
+//   src: url('{{ site.baseurl }}/assets/fonts/PressStart2P.ttf') format('truetype');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'BattleNet';
+//   src: url('{{ site.baseurl }}/assets/fonts/battlenet.ttf') format('truetype');
+//   font-weight: normal;
+//   font-style: normal;
+// }
 
 /* Color palette variables */
 :root {
@@ -36,7 +57,7 @@
 body {
   background-color: #111;
   color: #eee;
-  font-family: 'PixelOperator', monospace;
+  font-family: 'DepartureMono', monospace;
   font-size: 14px;
   line-height: 1.6;
   max-width: 800px;
@@ -62,7 +83,7 @@ header {
 
 /* Headings use BattleNet font */
 h1, h2, h3 {
-  font-family: 'BattleNet', monospace;
+  font-family: 'PixelOperator', monospace;
   font-weight: normal;
 }
 
@@ -79,7 +100,7 @@ h3 {
 }
 
 .post {
-  border: 2px solid #444;
+  border: 2px solid #333;
   padding: 15px;
   margin-bottom: 20px;
   background-color: #1a1a1a;
@@ -91,6 +112,36 @@ h3 {
 }
 
 img {
-  image-rendering: pixelated;
   max-width: 100%;
+}
+
+/* Block code */
+pre.highlight,
+pre.highlight code {
+  font-family: 'DepartureMono', monospace;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* Inline code */
+code.highlighter-rouge {
+  font-family: 'DepartureMono', monospace;
+  font-size: 12px;
+}
+
+/* Code block container */
+pre.highlight {
+  background-color: #222;
+  /* border: 2px solid #444; */
+  padding: 12px 14px; /* more padding inside */
+  margin: 20px 0; /* more space above & below */
+  overflow-x: auto;
+  border-radius: 8px; /* rounded corners */
+}
+
+code.highlighter-rouge {
+  background-color: #222;
+  padding: 2px 5px;
+  border-radius: 4px; /* slightly rounded */
+  color: var(--jun-summer-sol); /* orange accent */
 }

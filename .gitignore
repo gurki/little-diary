@@ -1,0 +1,43 @@
+# -------------------------
+# Jekyll build output
+# -------------------------
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# -------------------------
+# Bundler / Ruby
+# -------------------------
+vendor/
+.bundle/
+Gemfile.lock
+
+# -------------------------
+# OS-specific files
+# -------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# -------------------------
+# Logs / temp files
+# -------------------------
+*.log
+*.tmp
+*.swp
+*.swo
+
+# -------------------------
+# Node (if you use npm for assets)
+# -------------------------
+node_modules/
