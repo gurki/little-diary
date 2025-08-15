@@ -10,4 +10,4 @@ excerpt_separator: "<!--more-->"
 plugins:
   - jekyll-last-modified-at
 last-modified-at:
-  date-format: "%Y-%m-%dT%H:%M:%S%"
+  date-format: "%Y-%m-%dT%H:%M:%SZ"
