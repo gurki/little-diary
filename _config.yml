@@ -6,3 +6,6 @@ highlighter: rouge
 url: "https://gurki.github.io"
 baseurl: "/little-diary"
 page_excerpts: true
+excerpt_separator: "<!--more-->"
+plugins:
+  - jekyll-last-modified-at
