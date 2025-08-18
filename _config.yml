@@ -1,13 +1,19 @@
 title: little diary 📔
 description: collection of tid bits, small projects and thoughts
+url: "https://gurki.github.io"
+author: 
+  name: Tobias Gurdan
+  github: gurki
+  bluesky: tbsgrdn
 theme: null
 markdown: GFM
 highlighter: rouge
-url: "https://gurki.github.io"
 baseurl: "/little-diary"
 page_excerpts: true
 excerpt_separator: "<!--more-->"
+
 plugins:
   - jekyll-last-modified-at
+  - jekyll-feed
 last-modified-at:
   date-format: "%Y-%m-%dT%H:%M:%SZ"
